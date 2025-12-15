@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.logout-link {
+    float: right;
+    color: #dc3545;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.logout-link:hover {
+    text-decoration: underline;
+}
+
+.chat-area {
+    height: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: white;
+    overflow-y: auto;
+}
+
+.message {
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+/* 普通消息样式 */
+.message.normal.self {
+    background-color: #e1f5fe;
+    margin-left: auto;
+}
+
+.message.normal.other {
+    background-color: #f1f1f1;
+    margin-right: auto;
+}
+
+/* 私聊消息样式 */
+.message.private.self {
+    background-color: #fce4ec;
+    margin-left: auto;
+}
+
+.message.private.other {
+    background-color: #f3e5f5;
+    margin-right: auto;
+}
+
+/* 系统通知样式 */
+.message.system {
+    background-color: #f5f5f5;
+    max-width: 100%;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.sender {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.private-tag {
+    font-size: 12px;
+    color: #ff4081;
+    margin-left: 8px;
+}
+
+.time {
+    font-size: 12px;
+    color: #666;
+    float: right;
+}
+
+.content {
+    display: block;
+    margin-top: 5px;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+.receiver-select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-width: 120px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0b7dda;
+}
