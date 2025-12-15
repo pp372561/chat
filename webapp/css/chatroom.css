@@ -42,47 +42,20 @@ h1 {
     word-wrap: break-word;
 }
 
-/* 普通消息样式 */
-.message.normal.self {
+.message.self {
     background-color: #e1f5fe;
     margin-left: auto;
 }
 
-.message.normal.other {
+.message.other {
     background-color: #f1f1f1;
     margin-right: auto;
-}
-
-/* 私聊消息样式 */
-.message.private.self {
-    background-color: #fce4ec;
-    margin-left: auto;
-}
-
-.message.private.other {
-    background-color: #f3e5f5;
-    margin-right: auto;
-}
-
-/* 系统通知样式 */
-.message.system {
-    background-color: #f5f5f5;
-    max-width: 100%;
-    text-align: center;
-    color: #666;
-    font-size: 14px;
 }
 
 .sender {
     font-weight: bold;
     margin-bottom: 5px;
     color: #333;
-}
-
-.private-tag {
-    font-size: 12px;
-    color: #ff4081;
-    margin-left: 8px;
 }
 
 .time {
@@ -99,13 +72,6 @@ h1 {
 .input-area {
     display: flex;
     gap: 10px;
-}
-
-.receiver-select {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    min-width: 120px;
 }
 
 input[type="text"] {
